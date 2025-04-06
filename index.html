@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Générateur de billet pour la conférence de codage 2025">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <title>Frontend Mentor | Générateur de billet de conférence</title>
+</head>
+
+<body>
+<div class="page-wrapper">
+
+  <section class="registration-form ">
+    <div class="brand-logo">
+      <img src="assets/images/logo-full.svg" alt="Logo de la conférence">
+    </div>
+
+    <h1 class="main-heading">
+      <span class="main-heading__line">Your Journey to Coding Conf</span>
+      <span class="main-heading__line">2025 Starts Here!</span>
+    </h1>
+
+    <p class="subheading mt mb">
+      Secure your spot at next year's biggest coding conference.
+    </p>
+
+    <form action="#" method="post" class="ticket-form">
+
+      <div class="form-group">
+        <label class="form-label">Select Avatar</label>
+        <div class="upload-area " tabindex="0">
+          <div class="upload-area__icon">
+            <img src="assets/images/icon-upload.svg" alt="" aria-hidden="true" class="upload-icon">
+            <img src="" alt="Preview" class="image-preview hidden">
+          </div>
+          <div class="upload-area__text">
+            Click to select from gallery
+          </div>
+          <div class="upload-actions hidden">
+            <button type="button" class="btn-change">Change image</button>
+            <button type="button" class="btn-remove">Remove image</button>
+          </div>
+        </div>
+
+        <div class="image-selector-modal hidden">
+          <div class="modal-content">
+            <h3>Select an Avatar</h3>
+            <div class="image-gallery">
+
+            </div>
+            <button class="btn-close-modal">Close</button>
+          </div>
+        </div>
+        <div class="form-instruction">
+          <img src="assets/images/icon-info.svg" alt="Info">
+          <span>Choose from our gallery (JPG or PNG)</span>
+        </div>
+        <div class="form-hint upload-error" style="display: none;">
+          <img src="assets/images/icon-error.svg" alt="Error">
+          <span>Please select an avatar</span>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="fullname" class="form-label">Full Name</label>
+        <input class="form-input" type="text" id="fullname" name="fullname" >
+        <div class="form-hint invalid-text" style="display: none;">
+          <img src="assets/images/icon-info.svg" alt="Icône info">
+          <span>Please enter a valid name</span>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="email" class="form-label">Email Address</label>
+        <input class="form-input" type="email" id="email" name="email" >
+        <div class="form-hint invalid-text" style="display: none;">
+          <img src="assets/images/icon-info.svg" alt="Icône info">
+          <span>Please enter a valid email</span>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label for="github" class="form-label">GitHub User Name</label>
+        <input class="form-input" type="text" id="github" name="github" >
+        <div class="form-hint invalid-text" style="display: none;">
+          <img src="assets/images/icon-info.svg" alt="Icône info">
+          <span>Please enter a valid Github user name</span>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn--primary">Generate My Ticket</button>
+      </div>
+    </form>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://www.youtube.com/channel/UC4WD0P2D038rEdN97gJqbQg/?sub_confirmation=1">Kg steve</a>.
+    </div>
+  </section>
+
+  <section class="ticket-preview hidden ">
+    <div class="brand-logo">
+      <img src="assets/images/logo-full.svg" alt="Logo de la conférence">
+    </div>
+
+    <h2 class="confirmation-heading">
+      <span class="confirmation-heading__line">Congrats, <span class="highlight-name">Kg Steve</span>!</span>
+      <span class="confirmation-heading__line">Your ticket is ready.</span>
+    </h2>
+
+    <div class="confirmation-message">
+      <p>We've emailed your ticket to </p>
+      <p><span class="user-email">kgsteve@gmail.com</span> and will send updates in</p>
+      <p> the run up to the event.</p>
+    </div>
+
+    <div class="ticket-card">
+      <div class="ticket-card__content">
+        <div class="event-info">
+          <img src="assets/images/logo-full.svg" alt="Logo de la conférence">
+          <div class="event-date" id="event-date"></div>
+        </div>
+
+        <div class="user-profile">
+          <img class="user-avatar" src="assets/images/image-avatar.jpg" alt="Photo de profil">
+          <div class="user-details">
+            <div class="user-name">Kg Steve</div>
+            <div class="user-github">
+              <img class="social-icon" src="assets/images/icon-github.svg" alt="Icône GitHub">
+              <span>@kgsteveto0101</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket-number">
+        #01609
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://www.youtube.com/channel/UC4WD0P2D038rEdN97gJqbQg/?sub_confirmation=1">Kg steve</a>.
+    </div>
+  </section>
+
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

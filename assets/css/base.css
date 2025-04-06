@@ -1,0 +1,55 @@
+:root {
+    --neutre-0: hsl(0, 0%, 100%);
+    --neutre-500-rgb: 138, 134, 158;
+    --neutre-500: hsl(245, 15%, 58%);
+    --neutre-700: hsl(245, 19%, 35%);
+    --neutre-900: hsl(248, 70%, 10%);
+    --orange-500: hsl(7, 88%, 67%);
+    --orange-700: hsl(7, 71%, 60%);
+    --degrade: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    --flou :blur(2px);
+    font-family: 'Inconsolata', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--neutre-0);
+    background-image:
+            url("../images/pattern-squiggly-line-top.svg"),
+            url("../images/pattern-squiggly-line-bottom-desktop.svg"),
+            url("../images/pattern-circle.svg"),
+            url("../images/pattern-circle.svg"),
+            url("../images/pattern-lines.svg"),
+            url("../images/background-desktop.png");
+    background-position:
+            right 50px,
+            bottom left,
+            calc(10% - 50px)  -50px,
+            calc(100% - 250px) center,
+            center top,
+            center center ;
+    background-repeat:
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat,
+            no-repeat;
+    background-size:
+            auto,
+            auto,
+            auto,
+            auto,
+            auto,
+            cover;
+
+
+    position: relative;
+}
+
+
